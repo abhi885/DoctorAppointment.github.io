@@ -1,0 +1,57 @@
+﻿@model IEnumerable<DoctorWeb.Models.Adminlogin>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AdminFirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AdminLastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AdminEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AdminPassword)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AdminConfirmPassword)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AdminFirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AdminLastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AdminEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AdminPassword)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AdminConfirmPassword)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.AdminId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.AdminId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.AdminId })
+        </td>
+    </tr>
+}
+
+</table>

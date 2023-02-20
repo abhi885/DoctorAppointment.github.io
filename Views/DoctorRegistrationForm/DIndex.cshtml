@@ -1,0 +1,117 @@
+﻿@model IEnumerable<DoctorWeb.Models.Registration_Form>
+
+@{
+    ViewBag.Title = "Doctor Details";
+}
+
+<h2>Doctor List</h2>
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>*@
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.R_FirstName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.R_LastName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.R_Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.R_Country)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.R_State)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.R_City)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.R_Contact)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.R_Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.R_Qualification)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.R_Specialization)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.R_WorkExperience)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.R_AchievementDetails)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.R_Password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.R_ConfirmPassword)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.R_JoiningDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.R_FirstName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.R_LastName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.R_Gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.R_Country)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.R_State)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.R_City)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.R_Contact)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.R_Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.R_Qualification)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.R_Specialization)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.R_WorkExperience)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.R_AchievementDetails)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.R_Password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.R_ConfirmPassword)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.R_JoiningDate)
+        </td>
+        @*<td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.rid }) |
+            @Html.ActionLink("Details", "Details", new { id=item.rid }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.rid })
+        </td>*@
+    </tr>
+}
+
+</table>

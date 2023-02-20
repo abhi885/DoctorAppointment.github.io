@@ -1,0 +1,58 @@
+﻿@model DoctorWeb.Models.BookingOnline
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>BookingOnline</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.bo_name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bo_name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bo_phone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bo_phone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bo_date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bo_date)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bo_time)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bo_time)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.bo_Speciality)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.bo_Speciality)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.bo_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,58 @@
+﻿@model DoctorWeb.Models.Contact
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Contact</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.C_FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.C_FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.C_LasttName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.C_LasttName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.C_Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.C_Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.C_Subject)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.C_Subject)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.C_Message)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.C_Message)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.C_id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

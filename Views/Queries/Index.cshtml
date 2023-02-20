@@ -1,0 +1,51 @@
+﻿@model IEnumerable<DoctorWeb.Models.Query>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@*<p>
+    @Html.ActionLink("Create New", "Create")
+</p>*@
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Qname)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Qcontact)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Qquestion)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Qname)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Qcontact)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Qquestion)
+        </td>
+        <td>
+            
+            @Html.ActionLink("Reply", "Create", "Contacts") 
+            @Html.ActionLink("Delete", "Delete", new { id=item.Qid })
+        </td>
+    </tr>
+}
+
+</table>

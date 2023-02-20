@@ -1,0 +1,170 @@
+﻿@model DoctorWeb.Models.Registration_Form
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Registration_Form</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.R_FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.R_FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.R_LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.R_LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.R_Gender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.R_Gender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.R_Country)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.R_Country)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.R_State)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.R_State)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.R_City)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.R_City)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.R_Contact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.R_Contact)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.R_Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.R_Email)
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.R_Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.R_Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.R_Fields)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.R_Fields)
+        </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.R_Qualification)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.R_Qualification)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.R_Specialization)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.R_Specialization)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.R_WorkExperience)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.R_WorkExperience)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.R_AchievementDetails)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.R_AchievementDetails)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.R_Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.R_Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.R_ConfirmPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.R_ConfirmPassword)
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.R_ProfileStates)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.R_ProfileStates)
+        </dd>*@
+
+        <dt>
+            @Html.DisplayNameFor(model => model.R_JoiningDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.R_JoiningDate)
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.R_OtherDetails)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.R_OtherDetails)
+        </dd>*@
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.rid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

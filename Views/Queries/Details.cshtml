@@ -1,0 +1,50 @@
+﻿@model DoctorWeb.Models.Query
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Query</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Qname)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Qname)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Qcontact)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Qcontact)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Qquestion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Qquestion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Qid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,64 @@
+﻿@model IEnumerable<DoctorWeb.Models.BookingOnline>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+   <a href="http://localhost:8304/DoctorRegistrationForm">Registered Doctor List</a>
+
+
+<br/>
+<a href="http://localhost:8304/Queries">Queries of Patient</a>
+<br/>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.bo_name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bo_phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bo_date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bo_time)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.bo_Speciality)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.bo_name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bo_phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bo_date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bo_time)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.bo_Speciality)
+        </td>
+        @*<td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.bo_id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.bo_id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.bo_id })
+        </td>*@
+    </tr>
+}
+
+</table>

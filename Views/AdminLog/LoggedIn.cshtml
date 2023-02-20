@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "LoggedIn";
+}
+
+<h2>Admin login sucessfully</h2>
+
+<h3>Admin Dashboard</h3>
+
+<h4>Welcome to Admin dashboard.Free to review all pages and free to ask any queries about patients !!</h4>
+<br/>
+<br />
+
+<div class="col-md-3">
+    <img src="~/Photos/male-doctor-gym-25849062.jpg" height="200" width="200" /><br />
+    @*<a href="http://localhost:8304/EmployeesReg">Booking appointment Request..</a>*@
+    <p><a class="btn btn-success" href="@Url.Action("Index","EmployeesReg")">Booking appointment Request..</a></p>
+</div>
+
+<div class="col-md-3">
+    <img src="~/Photos/Doctor2.jpeg" height="200" width="200" /><br />
+    @*<a href="http://localhost:8304/DoctorRegistrationForm/DIndex">Registered Doctor List..</a>*@
+    <p><a class="btn btn-success" href="@Url.Action("DIndex","DoctorRegistrationForm")">Registered Doctor List..</a></p>
+</div>
+
+<div class="col-md-3">
+    <img src="~/Photos/male-doctor-gym-25849062.jpg" height="200" width="200" /><br />
+    @*<a href="http://localhost:8304/Queries">Queries of Patient..</a>*@
+    <p><a class="btn btn-success" href="@Url.Action("Index","Queries")">Queries of Patient..</a></p>
+
+</div>
+
+<div class="col-md-3">
+    <img src="~/Photos/Doctor5.jpeg" height="200" width="200" /><br />
+    @*<a href="http://localhost:8304/Contacts">View doctor replies..</a>*@
+    <p><a class="btn btn-success" href="@Url.Action("Index","Contacts")">View doctor replies..</a></p>
+</div>
+

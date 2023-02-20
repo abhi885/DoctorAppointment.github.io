@@ -1,0 +1,58 @@
+﻿@model DoctorWeb.Models.Adminlogin
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Adminlogin</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AdminFirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdminFirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdminLastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdminLastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdminEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdminEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdminPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdminPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdminConfirmPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdminConfirmPassword)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AdminId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
